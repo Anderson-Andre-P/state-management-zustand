@@ -1,11 +1,11 @@
-import Home from "./pages/Home";
+import Users from "./pages/Users";
 import UserForm from "./pages/UserForm";
 
 function App() {
   return (
     <>
-      <Home />
       <UserForm />
+      <Users />
     </>
   );
 }

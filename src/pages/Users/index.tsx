@@ -1,7 +1,7 @@
 import React from "react";
 import useUserStore from "../../stores/user";
 
-const Home = () => {
+const Users = () => {
   const users = useUserStore((state) => state.users);
 
   return (
@@ -15,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Users;

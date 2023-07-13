@@ -18,8 +18,8 @@ const UserForm = () => {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <input name="name" placeholder="Digite seu nome" />
-        <input name="email" placeholder="Digite seu e-mail" />
+        <input name="name" placeholder="Digite seu nome" required />
+        <input name="email" placeholder="Digite seu e-mail" required />
         <button type="submit">Criar usuário</button>
       </form>
     </div>
