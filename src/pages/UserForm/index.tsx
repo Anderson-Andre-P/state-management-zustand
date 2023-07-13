@@ -1,7 +1,29 @@
-import React from 'react'
+import React from "react";
+import useUserStore from "../../stores/user";
 
 const UserForm = () => {
- return <div>Olá</div>
-}
+  const addUser = useUserStore((state) => state.addUser);
+
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const name = (e.target as any).name.value;
+    const email = (e.target as any).email.value;
+
+    addUser({
+      name,
+      email,
+    });
+  };
+
+  return (
+    <div>
+      <form onSubmit={onSubmit}>
+        <input name="name" placeholder="Digite seu nome" />
+        <input name="email" placeholder="Digite seu e-mail" />
+        <button type="submit">Criar usuário</button>
+      </form>
+    </div>
+  );
+};
 
 export default UserForm;

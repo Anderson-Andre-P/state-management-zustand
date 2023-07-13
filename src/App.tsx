@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import Home from './pages/Home'
-import UserForm from './pages/UserForm'
+import Home from "./pages/Home";
+import UserForm from "./pages/UserForm";
 
 function App() {
   return (
     <>
-     <Home />
-     <UserForm />
+      <Home />
+      <UserForm />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
